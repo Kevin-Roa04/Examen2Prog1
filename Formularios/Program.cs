@@ -20,10 +20,10 @@ namespace Formularios
             //builder.RegisterType<ObjetoRepository>().As<IObjetoRespository>();
             //builder.RegisterType<ObjetoService>().As<IObjetoService>();
 
-            //var container = new builder.build();
+            //var container = builder.build();
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            //Application.Run(new Formulario(ContainerBuilder(IObjetoService)));
+            //Application.Run(new Formulario(container.Resolve<IObjetoService>()));
         }
     }
 }
